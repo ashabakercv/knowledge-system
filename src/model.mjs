@@ -1,0 +1,1 @@
+export function searchArticles(rows,query='',category='All',asOf='2026-11-17'){const q=query.trim().toLowerCase();return rows.filter(a=>a.state!=='Retired'&&(category==='All'||a.category===category)&&[a.title,a.summary,a.category,a.audience,a.body].join(' ').toLowerCase().includes(q)).map(a=>({...a,reviewDue:a.next<asOf}));}

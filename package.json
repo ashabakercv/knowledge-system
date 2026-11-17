@@ -1,0 +1,13 @@
+{
+  "name": "knowledge-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Searchable guidance with ownership, lifecycle controls and a useful route to resolution.",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
